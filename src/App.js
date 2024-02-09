@@ -19,8 +19,8 @@ function App() {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
         </Container>
-        <Button variant="primary">Primary</Button>{' '}
-      <Button variant="secondary">Secondary</Button>{' '}
+        <Button variant="primary">Login</Button>{' '}
+      <Button variant="success" style={{marginLeft:'10px', marginRight:'10px'}}>Signup</Button>{' '}
       </Navbar>
       <header className="App-header">
         <h1>PaperPal</h1>
