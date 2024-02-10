@@ -7,6 +7,25 @@
   pointer-events: none;
 }
 
+.squiggly-text {
+  text-decoration: underline;
+  text-decoration-color: caramel;
+  text-decoration-style: wavy;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: orange; /* Or any color you prefer */
+  border-radius: 50%;
+  margin-bottom: 100px;
+  margin-left: 1180px; /* Adjust margin as needed to position the circle */
+}
+
+/* Add any other styles you need */
+
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
