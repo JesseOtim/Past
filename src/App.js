@@ -42,7 +42,6 @@ function App() {
         <Container className="d-flex justify-content-center align-items-center">
           <Navbar.Brand href="#home">
             <span
-              className="squiggly-text"
               style={{
                 color: "Orangered",
                 fontSize: "35px",
@@ -105,7 +104,7 @@ function App() {
                 </Form.Control.Feedback>
               </Form.Group>
 </Row>
-              <Button type="submit" className="div">Submit form</Button>
+              <Button type="submit" className="div">Submit</Button>
             </Form>
           </Modal.Body>
           
@@ -171,7 +170,7 @@ function App() {
                 </Form.Control.Feedback>
                 </Form.Group>
               </Row>
-              <Button variant="success" type="submit">Submit form</Button>
+              <Button variant="success" type="submit">Submit</Button>
             </Form>
           </Modal.Body>
         </Modal>
