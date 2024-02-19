@@ -183,12 +183,12 @@ function App() {
         </Modal>
       </Navbar>
       <header className="App-header">
-        <h1>PaperPal</h1>
-        <p>"Unleash Your Academic Potential with PaperPal!"</p>
+      <h1 style={{fontSize:"85px", color:"orangered"}}>PaperPal</h1>
+        <p style={{fontSize:"35px"}}>"Unleash Your Academic Potential with PaperPal!"</p>
         <div className="circle"></div> {/* Circle */}
       </header>
-      <Container className="d-flex justify-content-center align-items-center" style={{marginTop:'100px', color:'brown'}}>
-        <h1 style={{fontSize:'50px', fontWeight:'bolder'}}>Introducing a CHEAT CODE</h1>
+      <Container className="d-flex justify-content-center align-items-center" style={{marginTop:'100px', color:'darkgreen'}}>
+        <h1 style={{fontSize:'50px', fontWeight:'bolder'}}>Introducing your Academic friend</h1>
       </Container>
       <Container>
       <Row>
