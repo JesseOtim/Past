@@ -51,7 +51,7 @@ function App() {
             >
               KIU
             </span>
-            <span style={{ fontSize: "34px" }}> Past Papers : PaperPal</span>
+            <span style={{ fontSize: "34px",fontWeight:"bold"}}> Past Papers : PaperPal</span>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
         </Container>
