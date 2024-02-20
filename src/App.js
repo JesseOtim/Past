@@ -190,10 +190,17 @@ function App() {
         <h1 style={{fontSize:'50px', fontWeight:'bolder'}}>Introducing your Academic friend</h1>
       </Container>
       <Container>
-        <p>Helping you out in every turn</p>
+        <p style={{fontSize:"20px", fontWeight:"bold"}}>Helping you out in every turn</p>
       </Container>
-      <Container className="d-flex justify-content-center align-items-center"  style={{ margin: '2px', border: '2px solid red'}}>
-      <h1>Bike</h1>
+      <Container  style={{margin: '2px', border: '2px solid red', height: '50vh', marginLeft:"8%"}}>
+        <Row>
+          <Col>
+          <h1 style={{marginTop:"10px"}}>2020 Past Papers</h1>
+          </Col>
+          <Col><h1 style={{marginTop:"10px"}}>CHSS</h1></Col>
+          </Row>
+          
+      
     </Container>
      
     </div>
