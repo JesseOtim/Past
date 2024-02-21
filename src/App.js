@@ -7,6 +7,7 @@ import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
+import Card from "react-bootstrap/Card";
 import { useState } from "react";
 import setValidated from "react";
 import validated from "react";
@@ -214,12 +215,27 @@ function App() {
           border: "2px solid red",
           height: "50vh",
           marginLeft: "8%",
+          borderRadius: "10%",
         }}
       >
         <Row>
           <Col>
+          <Container>
             <h1 style={{ marginTop: "10px" }}>2020 Past Papers</h1>
+            <Card style={{ width: "18rem" }}>
+              <Card.Img variant="top" src="C:\Users\user\past\public\KIU Background.jfif" />
+              <Card.Body>
+                <Card.Title>Card Title</Card.Title>
+                <Card.Text>
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+            </Container>
           </Col>
+          
+
           <Col>
             <h1 style={{ marginTop: "10px" }}>CHSS</h1>
           </Col>
@@ -227,7 +243,7 @@ function App() {
       </Container>
 
       {/* FOOTER starts here*/}
-       <footer className="bg-dark text-light py-4">
+      <footer className="bg-dark text-light py-4" style={{ marginTop: "50px" }}>
         <Container className="text-center">
           <p>&copy; 2024 KIU Past Papers : PaperPal</p>
         </Container>
