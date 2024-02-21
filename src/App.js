@@ -53,27 +53,31 @@ function App() {
             <span style={{ fontSize: "34px",fontWeight:"bold"}}> Past Papers : PaperPal</span>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+          <div className="d-flex align-items-center ms-auto">
+            <Button
+              variant="primary"
+              style={{ borderRadius: "35%", fontWeight: "bold" }}
+              onClick={handleLoginShow}
+            >
+              Login
+            </Button>
+            <Button
+              variant="success"
+              style={{
+                marginLeft: "10px",
+                marginRight: "10px",
+                borderRadius: "35%",
+                fontWeight: "bold",
+              }}
+              onClick={handleSignupShow}
+            >
+              Signup
+            </Button>
+          </div>
+        </Navbar.Collapse>
         </Container>
-        <Button
-          variant="primary"
-          style={{ borderRadius: "35%", fontWeight: "bold" }}
-          onClick={handleLoginShow}
-        >
-          Login
-        </Button>
-        <Button
-          variant="success"
-          style={{
-            marginLeft: "10px",
-            marginRight: "10px",
-            borderRadius: "35%",
-            fontWeight: "bold",
-          }}
-          onClick={handleSignupShow}
-        >
-          Signup
-        </Button>
-
+       
         <Modal show={showLogin} onHide={handleLoginClose}>
           <Modal.Header closeButton>
             <Modal.Title style={{ fontWeight: "bold", textAlign: "center" }}>
