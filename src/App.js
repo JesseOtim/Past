@@ -50,34 +50,37 @@ function App() {
             >
               KIU
             </span>
-            <span style={{ fontSize: "34px",fontWeight:"bold"}}> Past Papers : PaperPal</span>
+            <span style={{ fontSize: "34px", fontWeight: "bold" }}>
+              {" "}
+              Past Papers : PaperPal
+            </span>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-          <div className="d-flex align-items-center ms-auto">
-            <Button
-              variant="primary"
-              style={{ borderRadius: "35%", fontWeight: "bold" }}
-              onClick={handleLoginShow}
-            >
-              Login
-            </Button>
-            <Button
-              variant="success"
-              style={{
-                marginLeft: "10px",
-                marginRight: "10px",
-                borderRadius: "35%",
-                fontWeight: "bold",
-              }}
-              onClick={handleSignupShow}
-            >
-              Signup
-            </Button>
-          </div>
-        </Navbar.Collapse>
+            <div className="d-flex align-items-center ms-auto">
+              <Button
+                variant="primary"
+                style={{ borderRadius: "35%", fontWeight: "bold" }}
+                onClick={handleLoginShow}
+              >
+                Login
+              </Button>
+              <Button
+                variant="success"
+                style={{
+                  marginLeft: "10px",
+                  marginRight: "10px",
+                  borderRadius: "35%",
+                  fontWeight: "bold",
+                }}
+                onClick={handleSignupShow}
+              >
+                Signup
+              </Button>
+            </div>
+          </Navbar.Collapse>
         </Container>
-       
+
         <Modal show={showLogin} onHide={handleLoginClose}>
           <Modal.Header closeButton>
             <Modal.Title style={{ fontWeight: "bold", textAlign: "center" }}>
@@ -186,27 +189,49 @@ function App() {
         </Modal>
       </Navbar>
       <header className="App-header">
-      <h1 style={{fontSize:"85px", color:"orangered"}}>PaperPal</h1>
-        <p style={{fontSize:"35px"}}>"Unleash Your Academic Potential with PaperPal!"</p>
+        <h1 style={{ fontSize: "85px", color: "orangered" }}>PaperPal</h1>
+        <p style={{ fontSize: "35px" }}>
+          "Unleash Your Academic Potential with PaperPal!"
+        </p>
         <div className="circle"></div> {/* Circle */}
       </header>
-      <Container className="d-flex justify-content-center align-items-center" style={{marginTop:'100px', color:'darkgreen'}}>
-        <h1 style={{fontSize:'50px', fontWeight:'bolder'}}>Introducing your Academic friend</h1>
+      <Container
+        className="d-flex justify-content-center align-items-center"
+        style={{ marginTop: "100px", color: "darkgreen" }}
+      >
+        <h1 style={{ fontSize: "50px", fontWeight: "bolder" }}>
+          Introducing your Academic friend
+        </h1>
       </Container>
       <Container>
-        <p style={{fontSize:"20px", fontWeight:"bold"}}>Helping you out in every turn</p>
+        <p style={{ fontSize: "20px", fontWeight: "bold" }}>
+          Helping you out in every turn
+        </p>
       </Container>
-      <Container  style={{margin: '2px', border: '2px solid red', height: '50vh', marginLeft:"8%"}}>
+      <Container
+        style={{
+          margin: "2px",
+          border: "2px solid red",
+          height: "50vh",
+          marginLeft: "8%",
+        }}
+      >
         <Row>
           <Col>
-          <h1 style={{marginTop:"10px"}}>2020 Past Papers</h1>
+            <h1 style={{ marginTop: "10px" }}>2020 Past Papers</h1>
           </Col>
-          <Col><h1 style={{marginTop:"10px"}}>CHSS</h1></Col>
-          </Row>
-          
-      
-    </Container>
-     
+          <Col>
+            <h1 style={{ marginTop: "10px" }}>CHSS</h1>
+          </Col>
+        </Row>
+      </Container>
+
+      {/* FOOTER starts here*/}
+       <footer className="bg-dark text-light py-4">
+        <Container className="text-center">
+          <p>&copy; 2024 KIU Past Papers : PaperPal</p>
+        </Container>
+      </footer>
     </div>
   );
 }
