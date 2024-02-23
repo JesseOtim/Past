@@ -205,8 +205,8 @@ function App() {
         </h1>
       </Container>
       <Container>
-        <p style={{ fontSize: "20px", fontWeight: "bold" }}>
-          Helping you out in every turn
+        <p style={{ fontSize: "25px", fontWeight: "bold", color:"orangered" }}>
+          A helping hand at every turn
         </p>
       </Container>
       <Container
