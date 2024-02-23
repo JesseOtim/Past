@@ -7,7 +7,6 @@ import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import Card from "react-bootstrap/Card";
 import { useState } from "react";
 import setValidated from "react";
 import validated from "react";
@@ -222,16 +221,7 @@ function App() {
           <Col>
           <Container>
             <h1 style={{ marginTop: "10px" }}>2020 Past Papers</h1>
-            <Card style={{ width: "18rem" }}>
-              <Card.Img variant="top" src="C:\Users\user\past\public\KIU Background.jfif" />
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
-              </Card.Body>
-            </Card>
+        
             </Container>
           </Col>
           
