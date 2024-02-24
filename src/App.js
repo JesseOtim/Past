@@ -231,11 +231,11 @@ function App() {
       </Container>
 
       {/* FOOTER starts here*/}
-      <footer
-        className="bg-grey text-light py-4"
-        style={{ marginTop: "50px", backgroundColor: "grey" }}
-      >
-        <Container className="text-center" style={{color:"orangered", fontSize:"20px", fontWeight:"Bold"}}>
+      <footer className="bg-dark text-light py-4" style={{ marginTop: "50px" }}>
+        <Container
+          className="text-center"
+          style={{ color: "orangered", fontSize: "18px", fontWeight: "Bold" }}
+        >
           <p>&copy; 2024 KIU Past Papers : PaperPal</p>
         </Container>
       </footer>
