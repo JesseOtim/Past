@@ -235,7 +235,7 @@ function App() {
         className="bg-grey text-light py-4"
         style={{ marginTop: "50px", backgroundColor: "grey" }}
       >
-        <Container className="text-center" style={{color:"orangered"}}>
+        <Container className="text-center" style={{color:"orangered", fontSize:"20px"}}>
           <p>&copy; 2024 KIU Past Papers : PaperPal</p>
         </Container>
       </footer>
