@@ -230,8 +230,8 @@ function App() {
         </Row>
       </Container>
 
-      <Container>
-        <h1>More coming your way</h1>
+      <Container style={{marginTop:"20px"}}>
+        <h1 style={{fontWeight:"bold"}}>More coming your way</h1>
         </Container>
 
       {/* FOOTER starts here*/}
