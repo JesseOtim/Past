@@ -232,6 +232,7 @@ function App() {
 
       <Container style={{marginTop:"20px"}}>
         <h1 style={{fontWeight:"bold"}}>More coming your way</h1>
+        <p style={{fontSize:"20px"}}>"History repeats it's self", In this case, constantly.</p>
         </Container>
 
       {/* FOOTER starts here*/}
