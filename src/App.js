@@ -230,6 +230,10 @@ function App() {
         </Row>
       </Container>
 
+      <Container>
+        <h1>More coming your way</h1>
+        </Container>
+
       {/* FOOTER starts here*/}
       <footer className="bg-dark text-light py-4" style={{ marginTop: "50px" }}>
         <Container
