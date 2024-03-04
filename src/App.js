@@ -232,6 +232,7 @@ function App() {
 
       <Container style={{marginTop:"20px"}}>
         <h1 style={{fontWeight:"bold", color:"green"}}>More coming your way</h1>
+        <h2>Easily accessible</h2>
         <p style={{fontSize:"20px", fontWeight:"bold"}}>"History repeats it's self", In this case, constantly.</p>
         </Container>
 
