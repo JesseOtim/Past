@@ -212,7 +212,7 @@ function App() {
         style={{
           margin: "2px",
           border: "2px solid red",
-          height: "50vh",
+          height: "80vh",
           marginLeft: "8%",
           borderRadius: "10%",
         }}
@@ -222,7 +222,7 @@ function App() {
             <Container>
               <h1 style={{ marginTop: "10px" }}>2020 Past Papers</h1>
               <header className="HOD">
-                
+
               </header>
             </Container>
           </Col>
