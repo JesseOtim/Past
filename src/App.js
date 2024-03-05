@@ -212,7 +212,7 @@ function App() {
         style={{
           margin: "2px",
           border: "2px solid red",
-          height: "80vh",
+          height: "75vh",
           marginLeft: "8%",
           borderRadius: "10%",
         }}
