@@ -234,7 +234,7 @@ function App() {
         </Row>
       </Container>
 
-      <Container style={{ marginTop: "20px" }}>
+      <Container style={{ marginTop: "100px" }}>
         <h1 style={{ fontWeight: "bold", color: "green" }}>
           More coming your way
         </h1>
