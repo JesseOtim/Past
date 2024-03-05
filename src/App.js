@@ -197,7 +197,7 @@ function App() {
       </header>
       <Container
         className="d-flex justify-content-center align-items-center"
-        style={{ marginTop: "100px", color: "darkgreen" }}
+        style={{ marginTop: "100px", color: "green" }}
       >
         <h1 style={{ fontSize: "50px", fontWeight: "bolder" }}>
           Introducing your Academic friend
@@ -211,7 +211,7 @@ function App() {
       <Container
         style={{
           margin: "2px",
-          border: "2px solid red",
+          // border: "2px solid red",
           height: "75vh",
           marginLeft: "8%",
           borderRadius: "10%",
@@ -221,23 +221,28 @@ function App() {
           <Col>
             <Container>
               <h1 style={{ marginTop: "10px" }}>2020 Past Papers</h1>
-              <header className="HOD">
-
-              </header>
+              <header className="HOD"></header>
             </Container>
           </Col>
 
           <Col>
-            <h1 style={{ marginTop: "10px" }}>CHSS</h1>
+            <Container>
+              <h1 style={{ marginTop: "10px" }}>CHSS</h1>
+              <header className="HODO"></header>
+            </Container>
           </Col>
         </Row>
       </Container>
 
-      <Container style={{marginTop:"20px"}}>
-        <h1 style={{fontWeight:"bold", color:"green"}}>More coming your way</h1>
-        <h2 style={{color:"orangered"}}>Easily accessible</h2>
-        <p style={{fontSize:"20px", fontWeight:"bold"}}>"History repeats it's self", In this case, constantly.</p>
-        </Container>
+      <Container style={{ marginTop: "20px" }}>
+        <h1 style={{ fontWeight: "bold", color: "green" }}>
+          More coming your way
+        </h1>
+        <h2 style={{ color: "orangered" }}>Easily accessible</h2>
+        <p style={{ fontSize: "20px", fontWeight: "bold" }}>
+          "History repeats it's self", In this case, constantly.
+        </p>
+      </Container>
 
       {/* FOOTER starts here*/}
       <footer className="bg-dark text-light py-4" style={{ marginTop: "50px" }}>
