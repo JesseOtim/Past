@@ -220,7 +220,7 @@ function App() {
         <Row>
           <Col>
             <Container>
-              <h1 style={{ marginTop: "10px" }}>2020 Past Papers</h1>
+              <h1 style={{ marginTop: "10px",marginBottom:"20px" }}>2020 Past Papers</h1>
               <header className="HOD"></header>
             </Container>
           </Col>
