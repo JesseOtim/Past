@@ -220,14 +220,14 @@ function App() {
         <Row>
           <Col>
             <Container>
-              <h1 style={{ marginTop: "10px",marginBottom:"20px" }}>2020 Past Papers</h1>
+              <h1 style={{ marginTop: "10px",marginBottom:"20px",fontWeight:"bold" }}>2020 Past Papers</h1>
               <header className="HOD"></header>
             </Container>
           </Col>
 
           <Col>
             <Container>
-              <h1 style={{ marginTop: "10px" }}>CHSS</h1>
+              <h1 style={{ marginTop: "10px",marginBottom:"20px",fontWeight:"bold" }}>CHSS</h1>
               <header className="HODO"></header>
             </Container>
           </Col>
@@ -248,7 +248,7 @@ function App() {
       <footer className="bg-dark text-light py-4" style={{ marginTop: "50px" }}>
         <Container
           className="text-center"
-          style={{ color: "orangered", fontSize: "18px", fontWeight: "Bold" }}
+          style={{ fontSize: "18px", fontWeight: "Bold" }}
         >
           <p>&copy; 2024 KIU Past Papers : PaperPal</p>
         </Container>
