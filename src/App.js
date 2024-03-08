@@ -234,6 +234,15 @@ function App() {
         </Row>
       </Container>
 
+      <Container
+        className="d-flex justify-content-center align-items-center"
+        style={{ marginTop: "100px", color: "green" }}
+      >
+        <h1 style={{ fontSize: "50px", fontWeight: "bolder" }}>
+          Introducing your Academic friend
+        </h1>
+      </Container>
+
       <Container style={{ marginTop: "100px" }}>
         <h1 style={{ fontWeight: "bold", color: "green" }}>
           More coming your way
