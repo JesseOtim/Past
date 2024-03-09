@@ -11,6 +11,9 @@ import { useState } from "react";
 import setValidated from "react";
 import validated from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Product from "./product";
+import { Link, BrowserRouter as Router, Route } from "react-router-dom";
+
 function App() {
   // const [show, setShow] = useState(false);
 
@@ -181,9 +184,17 @@ function App() {
                   </Form.Control.Feedback>
                 </Form.Group>
               </Row>
-              <Button variant="success" type="submit">
-                Submit
-              </Button>
+              <Link to="/product">
+                <Button variant="success" type="submit">
+                  Submit
+                </Button>
+              </Link>
+
+              <div className="App">
+                {/* Your existing components */}
+                <Route path="/" exact component={App} />
+                <Route path="/product" component={Product} />
+              </div>
             </Form>
           </Modal.Body>
         </Modal>
