@@ -274,7 +274,7 @@ function App() {
       <footer className="bg-dark text-light py-4" style={{ marginTop: "50px" }}>
         <Container
           className="text-center"
-          style={{ fontSize: "18px", fontWeight: "Bold" }}
+          style={{ fontSize: "18px", fontWeight: "Bold", color:"Brown" }}
         >
           <p>&copy; 2024 KIU Past Papers : PaperPal</p>
         </Container>
