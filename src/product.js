@@ -4,7 +4,7 @@ function Product (){
     return(
 <div>
     <h1>Past paper:Paperpal</h1>
-    <p>The Past and present are your future here</p>
+    <p>The Past & present are your future here</p>
 </div>
     )
 }
