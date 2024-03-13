@@ -5,6 +5,7 @@ function Product (){
 <div>
     <h1>Past paper:Paperpal</h1>
     <p>The Past & present are your future here</p>
+<h2>Be the best version of your self</h2>
 </div>
     )
 }
