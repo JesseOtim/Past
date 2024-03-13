@@ -5,7 +5,7 @@ function Product() {
     <div>
       <h1 style={{color:"green", fontWeight:"bolder"}}>Past paper:Paperpal</h1>
       <p>The Past & present are your future here</p>
-      <h2>Be the best version of your self</h2>
+      <h2 style={{color:"orangered", fontWeight:"bolder"}}>Be the best version of your self</h2>
       <p>For the future</p>
     </div>
   );
