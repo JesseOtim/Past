@@ -12,7 +12,7 @@ import setValidated from "react";
 import validated from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Product from "./product";
-import { Link, BrowserRouter as Router, Route } from "react-router-dom";
+import { Link, BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   // const [show, setShow] = useState(false);
@@ -40,6 +40,7 @@ function App() {
   };
 
   return (
+    <Router>
     <div className="App">
       <Navbar expand="lg" className="bg-body-tertiary">
         <Container className="d-flex justify-content-center align-items-center">
@@ -280,6 +281,7 @@ function App() {
         </Container>
       </footer>
     </div>
+    </Router>
   );
 }
 
