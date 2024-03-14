@@ -191,13 +191,10 @@ function App() {
                   </Button>
                 </Link>
 
-                <div className="App">
-                  {/* Your existing components */}
-                  <Routes>
-                    <Route path="/" exact component={App} />
-                    <Route path="/product" component={Product} />
-                  </Routes>
-                </div>
+                <Routes>
+                  <Route path="/" exact component={<App/>} />
+                  <Route path="/product" component={<Product/>} />
+                </Routes>
               </Form>
             </Modal.Body>
           </Modal>
