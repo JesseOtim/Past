@@ -11,6 +11,8 @@ function Product() {
         Be the best version of your self
       </h2>
       <p>For the future</p>
+
+      <h2>Your Future</h2>
     </>
   );
 }
