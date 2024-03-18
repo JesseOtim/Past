@@ -12,7 +12,7 @@ function Product() {
       </h2>
       <p>For the future</p>
 
-      <h2>Your Future</h2>
+      <h2 style={{color:"orangered"}}>Your Future</h2>
     </>
   );
 }
