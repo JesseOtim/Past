@@ -4,7 +4,7 @@ function Product() {
   return (
     <>
       <h1 style={{ color: "green", fontWeight: "bolder" }}>
-        Past paper:Paperpal
+        Past paper<span style={{color:"blue"}}>:</span>Paperpal
       </h1>
       <p>The Past & present are your future here</p>
       <h2 style={{ color: "orangered", fontWeight: "bolder" }}>
