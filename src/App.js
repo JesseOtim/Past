@@ -12,9 +12,11 @@ import setValidated from "react";
 import validated from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Product from "./product";
-import { Link, BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+// import { Link, BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 function App() {
+  const history = useHistory();
+  
   // const [show, setShow] = useState(false);
 
   // const handleClose = () => setShow(false);
@@ -40,7 +42,7 @@ function App() {
   };
 
   return (
-    <Router>
+    // <Router>
       <div className="App">
         <Navbar expand="lg" className="bg-body-tertiary">
           <Container className="d-flex justify-content-center align-items-center">
@@ -185,16 +187,19 @@ function App() {
                     </Form.Control.Feedback>
                   </Form.Group>
                 </Row>
-                <Link to="/product">
+                {/* <Link to="/product">
                   <Button variant="success" type="submit">
                     Submit
                   </Button>
-                </Link>
-
+                </Link> */}
+                <Button variant="success" type="submit">
+                    Submit
+                  </Button>
+{/* 
                 <Routes>
                   <Route path="/" exact component={<App/>} />
                   <Route path="/product" component={<Product/>} />
-                </Routes>
+                </Routes> */}
               </Form>
             </Modal.Body>
           </Modal>
@@ -285,7 +290,7 @@ function App() {
           </Container>
         </footer>
       </div>
-    </Router>
+    // </Router>
   );
 }
 
