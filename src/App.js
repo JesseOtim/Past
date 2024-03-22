@@ -12,16 +12,14 @@ import setValidated from "react";
 import validated from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Product from "./product";
-// import { Link, BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { useHistory } from "react-router-dom";
-function App() {
-  const history = useHistory();
-  
-  // const [show, setShow] = useState(false);
+import { Link, BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-  // const handleClose = () => setShow(false);
-  // const handleShow = () => setShow(true);
-  // const [validated, setValidated] = useState(false);
+// const [show, setShow] = useState(false);
+
+// const handleClose = () => setShow(false);
+// const handleShow = () => setShow(true);
+// const [validated, setValidated] = useState(false);
+function App() {
   const [showLogin, setShowLogin] = useState(false);
   const [showSignup, setShowSignup] = useState(false);
 
@@ -42,7 +40,7 @@ function App() {
   };
 
   return (
-    // <Router>
+    <Router>
       <div className="App">
         <Navbar expand="lg" className="bg-body-tertiary">
           <Container className="d-flex justify-content-center align-items-center">
@@ -187,19 +185,18 @@ function App() {
                     </Form.Control.Feedback>
                   </Form.Group>
                 </Row>
-                {/* <Link to="/product">
-                  <Button variant="success" type="submit">
-                    Submit
-                  </Button>
-                </Link> */}
-                <Button variant="success" type="submit">
-                    Submit
-                  </Button>
-{/* 
+                {
+                  <Link to="/product">
+                    <Button variant="success" type="submit">
+                      Submit
+                    </Button>
+                  </Link>
+                }
+
                 <Routes>
-                  <Route path="/" exact component={<App/>} />
-                  <Route path="/product" component={<Product/>} />
-                </Routes> */}
+                  <Route path="/" exact component={<App />} />
+                  <Route path="/product" component={<Product />} />
+                </Routes>
               </Form>
             </Modal.Body>
           </Modal>
@@ -289,8 +286,8 @@ function App() {
             <p>&copy; 2024 KIU Past Papers : PaperPal</p>
           </Container>
         </footer>
-      </div>
-    // </Router>
+      </div>{" "}
+    </Router>
   );
 }
 
