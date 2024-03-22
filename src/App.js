@@ -284,7 +284,7 @@ function App() {
         >
           <Container
             className="text-center"
-            style={{ fontSize: "18px", fontWeight: "Bold", color: "Brown" }}
+            style={{ fontSize: "18px", fontWeight: "bolder", color: "white" }}
           >
             <p>&copy; 2024 KIU Past Papers : PaperPal</p>
           </Container>
