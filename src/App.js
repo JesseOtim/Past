@@ -266,7 +266,7 @@ function App() {
         </Container>
         <Container style={{ marginTop: "100px" }}>
           <h1 style={{ fontWeight: "bold", color: "green" }}>
-            More coming your way
+            More coming your way sooner than later
           </h1>
           <h2 style={{ color: "orangered" }}>Easily accessible</h2>
           <p style={{ fontSize: "20px", fontWeight: "bold" }}>
