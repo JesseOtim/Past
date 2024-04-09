@@ -25,11 +25,11 @@
 }
 
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
 .App-header {
   background-color: #282c34;
@@ -91,3 +91,55 @@
     transform: rotate(360deg);
   }
 }
+
+/* App.css */
+
+@media (max-width: 737px) {
+  /* Reset margins and padding */
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Set the width of the .App container to 100% */
+  .App {
+    width: 100vw;
+  }
+
+  /* Example background color for small screens */
+  .bg-body-tertiary {
+    background-color: lightblue;
+  }
+
+  /* Center content horizontally for small screens */
+  .d-flex.justify-content-lg-center {
+    justify-content: center;
+  }
+
+  /* Align items vertically for small screens */
+  .d-flex.align-items-center {
+    flex-direction: column;
+  }
+
+  /* Adjust margins for buttons on small screens */
+  .me-lg-3,
+  .mx-auto {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  /* Adjust bottom margin for form rows on small screens */
+  .mb-3 {
+    margin-bottom: 1rem !important;
+  }
+
+  /* Override styles for .HODO class on small screens */
+  .HODO {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
