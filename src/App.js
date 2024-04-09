@@ -43,7 +43,7 @@ function App() {
     <Router>
       <div className="App">
         <Navbar expand="lg" className="bg-body-tertiary">
-          <Container className="d-flex justify-content-center align-items-center">
+          <Container fluid className="d-flex justify-content-lg-center align-items-center">
             <Navbar.Brand href="#home">
               <span
                 style={{
@@ -64,6 +64,7 @@ function App() {
               <div className="d-flex align-items-center ms-auto">
                 <Button
                   variant="primary"
+                  className="rounded-pill me-lg-3"
                   style={{ borderRadius: "35%", fontWeight: "bold" }}
                   onClick={handleLoginShow}
                 >
@@ -71,6 +72,7 @@ function App() {
                 </Button>
                 <Button
                   variant="success"
+                  className="rounded-pill me-lg-3"
                   style={{
                     marginLeft: "10px",
                     marginRight: "10px",
@@ -117,7 +119,7 @@ function App() {
                     </Form.Control.Feedback>
                   </Form.Group>
                 </Row>
-                <Button type="submit" className="div">
+                <Button type="submit"className="d-block mx-auto">
                   Submit
                 </Button>
               </Form>

@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  background-image: url(../public/Images/john-fowler-7Ym9rpYtSdA-unsplash.jpg);
+  background-size: cover; /* Ensure the background image covers the entire body */
+  background-repeat: no-repeat;
 }
 
 .App-logo {
