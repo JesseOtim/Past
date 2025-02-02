@@ -2,17 +2,18 @@ import "./App.css";
 import React from "react";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
-import Button from "react-bootstrap/Button";
-import Modal from "react-bootstrap/Modal";
-import Form from "react-bootstrap/Form";
+// import Button from "react-bootstrap/Button";
+// import Modal from "react-bootstrap/Modal";
+// import Form from "react-bootstrap/Form";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import { useState } from "react";
-import setValidated from "react";
-import validated from "react";
+// import { useState } from "react";
+// import setValidated from "react";
+// import validated from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Product from "./product";
-import { Link, BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import Product from "./product";
+import { BrowserRouter as Router } from "react-router-dom";
+import Accordion from 'react-bootstrap/Accordion';
 
 // const [show, setShow] = useState(false);
 
@@ -20,73 +21,79 @@ import { Link, BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // const handleShow = () => setShow(true);
 // const [validated, setValidated] = useState(false);
 function App() {
-  const [showLogin, setShowLogin] = useState(false);
-  const [showSignup, setShowSignup] = useState(false);
-
-  const handleLoginShow = () => setShowLogin(true);
-  const handleLoginClose = () => setShowLogin(false);
-
-  const handleSignupShow = () => setShowSignup(true);
-  const handleSignupClose = () => setShowSignup(false);
-
-  const handleSubmit = (event) => {
-    const form = event.currentTarget;
-    if (form.checkValidity() === false) {
-      event.preventDefault();
-      event.stopPropagation();
-    }
-
-    setValidated(true);
-  };
+  // Comment out these state declarations and handlers
+  // const [showLogin, setShowLogin] = useState(false);
+  // const [showSignup, setShowSignup] = useState(false);
+  // const handleLoginShow = () => setShowLogin(true);
+  // const handleLoginClose = () => setShowLogin(false);
+  // const handleSignupShow = () => setShowSignup(true);
+  // const handleSignupClose = () => setShowSignup(false);
+  // const handleSubmit = (event) => {
+  //   const form = event.currentTarget;
+  //   if (form.checkValidity() === false) {
+  //     event.preventDefault();
+  //     event.stopPropagation();
+  //   }
+  //   setValidated(true);
+  // };
 
   return (
     <Router>
       <div className="App">
-        <Navbar expand="lg" className="bg-body-tertiary">
-          <Container fluid className="d-flex justify-content-lg-center align-items-center">
-            <Navbar.Brand href="#home">
-              <span
-                style={{
-                  color: "Orangered",
-                  fontSize: "35px",
-                  fontWeight: "bold",
-                }}
-              >
-                KIU
-              </span>
-              <span style={{ fontSize: "34px", fontWeight: "bold" }}>
-                {" "}
-                Past Papers : PaperPal
-              </span>
-            </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar expand="lg" className="bg-body-tertiary sticky-top">
+          <Container fluid>
+            <Row className="w-100 justify-content-center">
+              <Col xs="auto" className="d-flex justify-content-center">
+                <Navbar.Brand href="#home">
+                  <span
+                    style={{
+                      color: "Orangered",
+                      fontSize: "clamp(20px, 5vw, 35px)",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    KIU
+                  </span>
+                  <span
+                    style={{
+                      fontSize: "clamp(18px, 5vw, 34px)",
+                      fontWeight: "bold",
+                    }}
+                  >
+                    {" "}
+                    Past Papers
+                    {/* : PaperPal */}
+                  </span>
+                </Navbar.Brand>
+              </Col>
+              <Col xs="auto" className="d-flex align-items-center">
+                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+              </Col>
+            </Row>
             <Navbar.Collapse id="basic-navbar-nav">
+              {/* Comment out the login/signup buttons
               <div className="d-flex align-items-center ms-auto">
                 <Button
                   variant="primary"
-                  className="rounded-pill me-lg-3"
-                  style={{ borderRadius: "35%", fontWeight: "bold" }}
+                  className="rounded-pill me-2 me-lg-3"
+                  style={{ fontWeight: "bold", whiteSpace: "nowrap" }}
                   onClick={handleLoginShow}
                 >
                   Login
                 </Button>
                 <Button
                   variant="success"
-                  className="rounded-pill me-lg-3"
-                  style={{
-                    marginLeft: "10px",
-                    marginRight: "10px",
-                    borderRadius: "35%",
-                    fontWeight: "bold",
-                  }}
+                  className="rounded-pill"
+                  style={{ fontWeight: "bold", whiteSpace: "nowrap" }}
                   onClick={handleSignupShow}
                 >
                   Signup
                 </Button>
               </div>
+              */}
             </Navbar.Collapse>
           </Container>
-
+          {/* Comment out both modal components
           <Modal show={showLogin} onHide={handleLoginClose}>
             <Modal.Header closeButton>
               <Modal.Title style={{ fontWeight: "bold", textAlign: "center" }}>
@@ -94,7 +101,6 @@ function App() {
               </Modal.Title>
             </Modal.Header>
             <Modal.Body>
-              {" "}
               <Form noValidate validated={validated} onSubmit={handleSubmit}>
                 <Row>
                   <Form.Group md="4" controlId="validationCustom01">
@@ -126,7 +132,6 @@ function App() {
             </Modal.Body>
           </Modal>
 
-          {/* SIGNUP */}
           <Modal show={showSignup} onHide={handleSignupClose}>
             <Modal.Header closeButton>
               <Modal.Title style={{ fontWeight: "bold", textAlign: "center" }}>
@@ -134,7 +139,6 @@ function App() {
               </Modal.Title>
             </Modal.Header>
             <Modal.Body>
-              {" "}
               <Form noValidate validated={validated} onSubmit={handleSubmit}>
                 <Form.Group as={Col} md="12" controlId="validationCustom01">
                   <Form.Label>First name</Form.Label>
@@ -202,6 +206,7 @@ function App() {
               </Form>
             </Modal.Body>
           </Modal>
+          */}
         </Navbar>
         <header className="App-header">
           <h1 style={{ fontSize: "85px", color: "orangered" }}>PaperPal</h1>
@@ -274,6 +279,58 @@ function App() {
           <p style={{ fontSize: "20px", fontWeight: "bold" }}>
             "History repeats it's self", In this case, constantly.
           </p>
+        </Container>
+
+        <Container style={{ marginTop: '50px', marginBottom: '50px' }}>
+          <h2 style={{ textAlign: 'center', marginBottom: '30px', color: 'green' }}>
+            Browse Past Papers by Category
+          </h2>
+          <Accordion defaultActiveKey="0" flush>
+            <Accordion.Item eventKey="0">
+              <Accordion.Header>Law</Accordion.Header>
+              <Accordion.Body>
+                <ul>
+                  <li>Constitutional Law - 2020</li>
+                  <li>Criminal Law - 2019</li>
+                  <li>Contract Law - 2021</li>
+                  <li>International Law - 2018</li>
+                </ul>
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="1">
+              <Accordion.Header>Mass Communication</Accordion.Header>
+              <Accordion.Body>
+                <ul>
+                  <li>Media Studies - 2020</li>
+                  <li>Journalism - 2019</li>
+                  <li>Public Relations - 2021</li>
+                  <li>Advertising - 2018</li>
+                </ul>
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="2">
+              <Accordion.Header>Business Administration</Accordion.Header>
+              <Accordion.Body>
+                <ul>
+                  <li>Marketing - 2020</li>
+                  <li>Finance - 2019</li>
+                  <li>Human Resources - 2021</li>
+                  <li>Operations Management - 2018</li>
+                </ul>
+              </Accordion.Body>
+            </Accordion.Item>
+            <Accordion.Item eventKey="3">
+              <Accordion.Header>Computer Science</Accordion.Header>
+              <Accordion.Body>
+                <ul>
+                  <li>Programming - 2020</li>
+                  <li>Database Systems - 2019</li>
+                  <li>Artificial Intelligence - 2021</li>
+                  <li>Networking - 2018</li>
+                </ul>
+              </Accordion.Body>
+            </Accordion.Item>
+          </Accordion>
         </Container>
 
         {/* FOOTER starts here*/}
