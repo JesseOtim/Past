@@ -143,3 +143,23 @@
   }
 }
 
+.accordion-toggle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: transform 0.2s ease-in-out;
+}
+
+.accordion-button:not(.collapsed) .accordion-toggle {
+  transform: rotate(45deg);
+}
+
+.accordion-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.accordion-button::after {
+  display: none; /* Hide the default arrow */
+}
+

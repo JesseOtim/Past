@@ -13,7 +13,7 @@ import Row from "react-bootstrap/Row";
 import "bootstrap/dist/css/bootstrap.min.css";
 // import Product from "./product";
 import { BrowserRouter as Router } from "react-router-dom";
-import Accordion from 'react-bootstrap/Accordion';
+import Accordion from "react-bootstrap/Accordion";
 
 // const [show, setShow] = useState(false);
 
@@ -219,118 +219,163 @@ function App() {
           className="d-flex justify-content-center align-items-center"
           style={{ marginTop: "100px", color: "green" }}
         >
-          <h1 style={{ fontSize: "50px", fontWeight: "bolder" }}>
+          <h1 style={{ fontSize: "50px", fontWeight: "bolder", color: "orangered" }}>
             Introducing your Academic friend
           </h1>
         </Container>
         <Container>
           <p
-            style={{ fontSize: "25px", fontWeight: "bold", color: "orangered" }}
+            style={{ fontSize: "25px", fontWeight: "bold", color: "black" }}
           >
             A helping hand at every turn
           </p>
         </Container>
-        <Container
-          style={{
-            margin: "2px",
-            // border: "2px solid red",
-            height: "75vh",
-            marginLeft: "8%",
-            borderRadius: "10%",
-          }}
-        >
-          <Row>
-            <Col>
-              <Container>
-                <h1
-                  style={{
-                    marginTop: "10px",
-                    marginBottom: "20px",
-                    fontWeight: "bold",
-                  }}
-                >
-                  2020 Past Papers
-                </h1>
-                <header className="HOD"></header>
-              </Container>
-            </Col>
 
-            <Col>
-              <Container>
-                <h1
-                  style={{
-                    marginTop: "10px",
-                    marginBottom: "20px",
-                    fontWeight: "bold",
-                  }}
-                >
-                  CHSS
-                </h1>
-                <header className="HODO"></header>
-              </Container>
+        {/* Accordion Section */}
+        <Container style={{ marginTop: "50px", marginBottom: "50px" }}>
+          {/* <h2
+            style={{
+              textAlign: "center",
+              marginBottom: "30px",
+              color: "green",
+            }}
+          >
+            Browse Past Papers by Category
+          </h2> */}
+          <Row>
+            <Col md={4}>
+              <Accordion flush>
+                <Accordion.Item eventKey="0">
+                  <Accordion.Header>
+                    <span style={{ flex: 1 }}>Law</span>
+                    <span className="accordion-toggle">+</span>
+                  </Accordion.Header>
+                  <Accordion.Body>
+                    <Accordion flush>
+                      <Accordion.Item eventKey="0-0">
+                        <Accordion.Header>Criminal Law</Accordion.Header>
+                        <Accordion.Body>
+                          <Accordion flush>
+                            {[2024, 2023, 2022, 2021, 2020].map(
+                              (year, index) => (
+                                <Accordion.Item
+                                  eventKey={`0-0-${index}`}
+                                  key={year}
+                                >
+                                  <Accordion.Header>{year}</Accordion.Header>
+                                  <Accordion.Body>
+                                    <ul
+                                      style={{
+                                        listStyleType: "none",
+                                        paddingLeft: 0,
+                                      }}
+                                    >
+                                      <li>Paper 1</li>
+                                      <li>Paper 2</li>
+                                      <li>Paper 3</li>
+                                    </ul>
+                                  </Accordion.Body>
+                                </Accordion.Item>
+                              )
+                            )}
+                          </Accordion>
+                        </Accordion.Body>
+                      </Accordion.Item>
+                      {/* Add more subjects here following the same pattern */}
+                    </Accordion>
+                  </Accordion.Body>
+                </Accordion.Item>
+              </Accordion>
+            </Col>
+            <Col md={4}>
+              <Accordion flush>
+                <Accordion.Item eventKey="1">
+                  <Accordion.Header>
+                    <span style={{ flex: 1 }}>Mass Communication</span>
+                    <span className="accordion-toggle">+</span>
+                  </Accordion.Header>
+                  <Accordion.Body>
+                    <Accordion flush>
+                      <Accordion.Item eventKey="1-0">
+                        <Accordion.Header>Journalism</Accordion.Header>
+                        <Accordion.Body>
+                          <Accordion flush>
+                            {[2024, 2023, 2022, 2021, 2020].map(
+                              (year, index) => (
+                                <Accordion.Item
+                                  eventKey={`1-0-${index}`}
+                                  key={year}
+                                >
+                                  <Accordion.Header>{year}</Accordion.Header>
+                                  <Accordion.Body>
+                                    <ul
+                                      style={{
+                                        listStyleType: "none",
+                                        paddingLeft: 0,
+                                      }}
+                                    >
+                                      <li>Paper 1</li>
+                                      <li>Paper 2</li>
+                                      <li>Paper 3</li>
+                                    </ul>
+                                  </Accordion.Body>
+                                </Accordion.Item>
+                              )
+                            )}
+                          </Accordion>
+                        </Accordion.Body>
+                      </Accordion.Item>
+                      {/* Add more subjects here following the same pattern */}
+                    </Accordion>
+                  </Accordion.Body>
+                </Accordion.Item>
+              </Accordion>
+            </Col>
+            <Col md={4}>
+              <Accordion flush>
+                <Accordion.Item eventKey="2">
+                  <Accordion.Header>
+                    <span style={{ flex: 1 }}>Business Administration</span>
+                    <span className="accordion-toggle">+</span>
+                  </Accordion.Header>
+                  <Accordion.Body>
+                    <Accordion flush>
+                      <Accordion.Item eventKey="2-0">
+                        <Accordion.Header>Marketing</Accordion.Header>
+                        <Accordion.Body>
+                          <Accordion flush>
+                            {[2024, 2023, 2022, 2021, 2020].map(
+                              (year, index) => (
+                                <Accordion.Item
+                                  eventKey={`2-0-${index}`}
+                                  key={year}
+                                >
+                                  <Accordion.Header>{year}</Accordion.Header>
+                                  <Accordion.Body>
+                                    <ul
+                                      style={{
+                                        listStyleType: "none",
+                                        paddingLeft: 0,
+                                      }}
+                                    >
+                                      <li>Paper 1</li>
+                                      <li>Paper 2</li>
+                                      <li>Paper 3</li>
+                                    </ul>
+                                  </Accordion.Body>
+                                </Accordion.Item>
+                              )
+                            )}
+                          </Accordion>
+                        </Accordion.Body>
+                      </Accordion.Item>
+                      {/* Add more subjects here following the same pattern */}
+                    </Accordion>
+                  </Accordion.Body>
+                </Accordion.Item>
+              </Accordion>
             </Col>
           </Row>
-        </Container>
-        <Container style={{ marginTop: "100px" }}>
-          <h1 style={{ fontWeight: "bold", color: "green" }}>
-            More coming your way sooner than later
-          </h1>
-          <h2 style={{ color: "orangered" }}>Easily accessible</h2>
-          <p style={{ fontSize: "20px", fontWeight: "bold" }}>
-            "History repeats it's self", In this case, constantly.
-          </p>
-        </Container>
-
-        <Container style={{ marginTop: '50px', marginBottom: '50px' }}>
-          <h2 style={{ textAlign: 'center', marginBottom: '30px', color: 'green' }}>
-            Browse Past Papers by Category
-          </h2>
-          <Accordion defaultActiveKey="0" flush>
-            <Accordion.Item eventKey="0">
-              <Accordion.Header>Law</Accordion.Header>
-              <Accordion.Body>
-                <ul>
-                  <li>Constitutional Law - 2020</li>
-                  <li>Criminal Law - 2019</li>
-                  <li>Contract Law - 2021</li>
-                  <li>International Law - 2018</li>
-                </ul>
-              </Accordion.Body>
-            </Accordion.Item>
-            <Accordion.Item eventKey="1">
-              <Accordion.Header>Mass Communication</Accordion.Header>
-              <Accordion.Body>
-                <ul>
-                  <li>Media Studies - 2020</li>
-                  <li>Journalism - 2019</li>
-                  <li>Public Relations - 2021</li>
-                  <li>Advertising - 2018</li>
-                </ul>
-              </Accordion.Body>
-            </Accordion.Item>
-            <Accordion.Item eventKey="2">
-              <Accordion.Header>Business Administration</Accordion.Header>
-              <Accordion.Body>
-                <ul>
-                  <li>Marketing - 2020</li>
-                  <li>Finance - 2019</li>
-                  <li>Human Resources - 2021</li>
-                  <li>Operations Management - 2018</li>
-                </ul>
-              </Accordion.Body>
-            </Accordion.Item>
-            <Accordion.Item eventKey="3">
-              <Accordion.Header>Computer Science</Accordion.Header>
-              <Accordion.Body>
-                <ul>
-                  <li>Programming - 2020</li>
-                  <li>Database Systems - 2019</li>
-                  <li>Artificial Intelligence - 2021</li>
-                  <li>Networking - 2018</li>
-                </ul>
-              </Accordion.Body>
-            </Accordion.Item>
-          </Accordion>
         </Container>
 
         {/* FOOTER starts here*/}
