@@ -6,18 +6,18 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 10vmin;
   pointer-events: none;
 }
 
-.circle {
+/* .circle {
   width: 100px;
   height: 100px;
   background-color: orange; /* Or any color you prefer */
-  border-radius: 50%;
+  /* border-radius: 50%;
   margin-bottom: 100px;
-  margin-left: 1180px; /* Adjust margin as needed to position the circle */
-}
+  margin-left: 1180px; Adjust margin as needed to position the circle */
+/* } */ */
 
 /* Add any other styles you need */
 .div{
@@ -32,12 +32,12 @@
 } */
 
 .App-header {
-  background-color: #282c34;
+  /* background-color: #282c34; */
   background-image: url(../public/Images/KIU\ Background.jfif);
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 15%;
-  min-height: 100vh;
+  border-radius: 30px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
